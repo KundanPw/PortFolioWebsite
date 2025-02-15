@@ -3,72 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Your Portfolio</title>
-    <link rel="stylesheet" href="./index.css">
+    <title>Simon Doe - Portfolio</title>
+    <link rel="stylesheet" href="index.css">
+    <script defer src="index.js"></script>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Your Name</h1>
-            <nav>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <section id="about" class="section">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>Hello! I'm a web developer with a passion for creating beautiful and functional websites. I have experience with HTML, CSS, JavaScript, and React. I love solving problems and learning new technologies.</p>
-        </div>
-    </section>
-
-    <section id="projects" class="section">
-        <div class="container">
-            <h2>My Projects</h2>
-            <div class="projects-grid">
-                <div class="project">
-                    <h3>Project 1</h3>
-                    <p>A brief description of your project.</p>
-                    <a href="#">View Project</a>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="profile">
+                <img src="profile.jpg" alt="Profile Picture">
+                <h2>Simon Doe</h2>
+                <p>Senior Software Engineer</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fas fa-envelope"></i></a>
                 </div>
-                <div class="project">
-                    <h3>Project 2</h3>
-                    <p>A brief description of your project.</p>
-                    <a href="#">View Project</a>
-                </div>
-                <div class="project">
-                    <h3>Project 3</h3>
-                    <p>A brief description of your project.</p>
-                    <a href="#">View Project</a>
-                </div>
+                <button class="hire-btn">Hire Me</button>
+                <button id="dark-mode-toggle">Dark Mode</button>
             </div>
-        </div>
-    </section>
+        </aside>
 
-    <section id="contact" class="section">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <form id="contactForm">
-                <input type="text" id="name" placeholder="Your Name" required>
-                <input type="email" id="email" placeholder="Your Email" required>
-                <textarea id="message" placeholder="Your Message" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
-        </div>
-    </section>
+        <!-- Main Content -->
+        <main class="main-content">
+            <section class="header">
+                <h1>Simon Doe</h1>
+                <h3>Senior Software Engineer</h3>
+                <p>
+                    I'm a software engineer specializing in frontend and backend development for complex web applications.
+                    I write about software development on my <a href="#">blog</a>. Want to collaborate? Check out my 
+                    <a href="#">portfolio</a> and <a href="#">resume</a>.
+                </p>
+                <button class="portfolio-btn">View Portfolio</button>
+                <button class="resume-btn">View Resume</button>
+            </section>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Your Name. All Rights Reserved.</p>
-        </div>
-    </footer>
-
-    <script src="./index.js"></script>
+            <section class="skills">
+                <h2>What I Do</h2>
+                <div class="skills-grid">
+                    <div class="skill"><i class="fab fa-js-square"></i> JavaScript</div>
+                    <div class="skill"><i class="fab fa-react"></i> React & Vue</div>
+                    <div class="skill"><i class="fab fa-node"></i> Node.js</div>
+                    <div class="skill"><i class="fab fa-python"></i> Python & Django</div>
+                    <div class="skill"><i class="fab fa-php"></i> PHP</div>
+                    <div class="skill"><i class="fab fa-html5"></i> HTML & CSS</div>
+                    <div class="skill"><i class="fab fa-sass"></i> Sass & LESS</div>
+                </div>
+            </section>
+        </main>
+    </div>
 </body>
 </html>
