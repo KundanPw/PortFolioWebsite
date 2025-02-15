@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* About Section */
+#about {
+    font-family: 'Poppins', sans-serif;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    margin: auto;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 4px solid #0073b1; /* LinkedIn blue */
+}
+
+.about-content {
+    text-align: center;
+}
+
+.about-content h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.about-content p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.about-content a {
+    color: #0073b1;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 5px;
+}
+
+.about-content a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .about-container {
+        flex-direction: row;
+        text-align: left;
+        gap: 30px;
+    }
+
+    .profile-pic {
+        width: 180px;
+        height: 180px;
+    }
+}

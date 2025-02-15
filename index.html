@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simon Doe - Portfolio</title>
+    <title>Kundan Kumar - Portfolio</title>
     <link rel="stylesheet" href="index.css">
     <script defer src="index.js"></script>
 </head>
@@ -12,44 +12,74 @@
         <!-- Sidebar -->
         <aside class="sidebar">
             <div class="profile">
-                <img src="profile.jpg" alt="Profile Picture">
-                <h2>Simon Doe</h2>
-                <p>Senior Software Engineer</p>
+                <h2>Kundan Kumar</h2>
+                <img src="/assets/kundan.jpg" alt="Profile Picture">
+                <p>FullStack Developer</p>
                 <div class="social-links">
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                    <a href="#"><i class="fab fa-github"></i></a>
-                    <a href="#"><i class="fas fa-envelope"></i></a>
+                    <a href="https://www.linkedin.com/in/kundan-kumar-b2670b255/"><img src="/assets/linkdin.svg" alt="" width="28px" height="28px"></a>
+                    <a href="https://github.com/KundanPw"><img src="/assets/github.svg" alt="" width="28px" height="28px"></a>
+                    <a href="https://x.com/k75616378"><img src="/assets/twit.svg" alt="" width="28px" height="28px"></a>
                 </div>
-                <button class="hire-btn">Hire Me</button>
-                <button id="dark-mode-toggle">Dark Mode</button>
+                <div class="page">
+                    <a href="./component/about.html"><img src="" alt="">About Me</a> <br>
+                    <a href="./component//resume.html">Resume</a> <br>
+                    <a href="./component/contact.html">Contact</a>
+                </div>
+                <button class="hire-btn"><a href="./component/contact.html">Hire Me</a></button>
+                <button class="dark-button" id="dark-mode-toggle">Dark Mode</button>
             </div>
+            
         </aside>
 
         <!-- Main Content -->
         <main class="main-content">
-            <section class="header">
-                <h1>Simon Doe</h1>
-                <h3>Senior Software Engineer</h3>
-                <p>
-                    I'm a software engineer specializing in frontend and backend development for complex web applications.
-                    I write about software development on my <a href="#">blog</a>. Want to collaborate? Check out my 
-                    <a href="#">portfolio</a> and <a href="#">resume</a>.
+            <section>
+                <h1 class="header">Kundan Kumar</h1>
+                <p class="header">
+                    "I’m a Master of Computer Applications (MCA) student at Galgotias University with a strong foundation in backend development,
+                     system design, and database management. I love building efficient and scalable web applications." Check out my 
+                     <a href="./component//resume.html">resume</a>.
                 </p>
+                <button class="resume-btn"><a href="./component//resume.html">View Resume</a></button>
                 <button class="portfolio-btn">View Portfolio</button>
-                <button class="resume-btn">View Resume</button>
             </section>
 
             <section class="skills">
-                <h2>What I Do</h2>
+                <h2>Skills</h2>
                 <div class="skills-grid">
                     <div class="skill"><i class="fab fa-js-square"></i> JavaScript</div>
-                    <div class="skill"><i class="fab fa-react"></i> React & Vue</div>
                     <div class="skill"><i class="fab fa-node"></i> Node.js</div>
-                    <div class="skill"><i class="fab fa-python"></i> Python & Django</div>
-                    <div class="skill"><i class="fab fa-php"></i> PHP</div>
                     <div class="skill"><i class="fab fa-html5"></i> HTML & CSS</div>
-                    <div class="skill"><i class="fab fa-sass"></i> Sass & LESS</div>
+                    <div class="skill"><i class="fab fa-html5"></i> Java(Core)</div>
+                    <div class="skill"><i class="fab fa-html5"></i> MYSQL</div>
+                </div>
+            </section>
+            <section class="skills">
+                <h2>Projects</h2>
+                <div class="skills-grid">
+                    <div class="skill">
+                        <i class="fab fa-node"></i><strong>Online Voting System</strong> 
+                        <p>"A secure web-based voting system for small-scale elections with voter authentication and
+                             real-time vote counting. Built using Node.js, Express.js, MySQL, and Sequelize CLI."
+                        </p>
+                    </div>
+                    <div class="skill">
+                        <i class="fab fa-js-square"></i><strong>Online Airline System</strong> 
+                        <p>"A web-based airline management system . 
+                            Built using Node.js, Express.js, MySQL, and Sequelize CLI."
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="skills quick">
+                <h2>Quick Link</h2>
+                <div>
+                    <a href="https://x.com/k75616378"><img src="/assets/twit.svg" alt="" width="28px" height="28px"></a>
+                    <a href="https://www.linkedin.com/in/kundan-kumar-b2670b255/"><img src="/assets/linkdin.svg" alt="" width="28px" height="28px"></a>
+                    <a href="https://github.com/KundanPw"><img src="/assets/github.svg" alt="" width="28px" height="28px"></a></div>
+                <div class="skills-grid">
+                    
                 </div>
             </section>
         </main>
